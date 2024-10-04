@@ -1,0 +1,52 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --cyan: #2bb1b2;
+  --dark-violet: #4b2c4d;
+  --red: #ff3b30;
+  --gray: #b3b3b3;
+  --grayish-violet: #a47c91;
+  --very-dark-blue: #3f2a4d;
+  --very-dark-violet: #3e2c38;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+  height: 2rem;
+  gap: 0.4rem;
+}
+
+.line {
+  width: 100%;
+  height: 0.3rem;
+  background-color: black;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.hamburger.rotate .line1 {
+  transform: rotate(45deg) translate(8px, 4px);
+}
+
+.hamburger.rotate .line2 {
+  opacity: 0;
+}
+
+.hamburger.rotate .line3 {
+  transform: rotate(-45deg) translate(7px, -5px);
+}
+
+.mobile-nav-links {
+  position: absolute;
+  top: -400px;
+  left: 0;
+  transition: top 0.5s ease-in-out;
+}
+
+.display {
+  top: 4rem;
+}

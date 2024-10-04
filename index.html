@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/output.css" />
+    <title>URL Shortener</title>
+  </head>
+  <body>
+    <nav class="flex justify-between items-center p-4 w-full mobile-nav">
+      <img src="./assets/images/logo.svg" alt="" />
+      <div class="hamburger hover:opacity-90 cursor-pointer">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+      <div class="w-full p-4 mobile-nav-links">
+        <div
+          class="bg-[#3f2a4d] font-bold text-[1.2rem] text-center flex flex-col gap-4 w-full rounded-md items-center justify-center py-6 px-6"
+        >
+          <ul class="flex flex-col gap-8 text-white">
+            <li class="hover:opacity-90 cursor-pointer">
+              <a href="#"></a>Features
+            </li>
+            <li class="hover:opacity-90 cursor-pointer">
+              <a href="#"></a>Pricing
+            </li>
+            <li class="hover:opacity-90 cursor-pointer">
+              <a href="#"></a>Resources
+            </li>
+          </ul>
+
+          <hr class="h-[1px] w-full bg-black" />
+          <div class="mobile-cta flex flex-col gap-6 text-white w-full">
+            <button class="cursor-pointer hover:opacity-90">Login</button>
+            <div
+              class="bg-[#2bb1b2] py-2 rounded-3xl w-full hover:opacity-90 cursor-pointer"
+            >
+              <button>Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script src="./assets/script.js"></script>
+</html>
