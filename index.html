@@ -12,34 +12,37 @@
     <title>URL Shortener</title>
   </head>
   <body>
-    <nav class="flex justify-between items-center p-4 w-full mobile-nav">
+    <!-- Mobile Navigation -->
+    <nav class="flex justify-between items-center py-8 px-4 w-full mobile-nav">
       <img src="./assets/images/logo.svg" alt="" />
       <div class="hamburger hover:opacity-90 cursor-pointer">
         <div class="line line1"></div>
         <div class="line line2"></div>
         <div class="line line3"></div>
       </div>
-      <div class="w-full p-4 mobile-nav-links">
+      <div class="w-full py-8 px-4 mobile-nav-links">
         <div
-          class="bg-[#3f2a4d] font-bold text-[1.2rem] text-center flex flex-col gap-4 w-full rounded-md items-center justify-center py-6 px-6"
+          class="bg-[#3f2a4d] font-bold text-[1.2rem] text-center flex flex-col gap-4 w-full rounded-md items-center justify-center p-6"
         >
           <ul class="flex flex-col gap-8 text-white">
-            <li class="hover:opacity-90 cursor-pointer">
+            <li class="hover:opacity-90 cursor-pointer nav-link">
               <a href="#"></a>Features
             </li>
-            <li class="hover:opacity-90 cursor-pointer">
+            <li class="hover:opacity-90 cursor-pointer nav-link">
               <a href="#"></a>Pricing
             </li>
-            <li class="hover:opacity-90 cursor-pointer">
+            <li class="hover:opacity-90 cursor-pointer nav-link">
               <a href="#"></a>Resources
             </li>
           </ul>
 
           <hr class="h-[1px] w-full bg-black" />
           <div class="mobile-cta flex flex-col gap-6 text-white w-full">
-            <button class="cursor-pointer hover:opacity-90">Login</button>
+            <button class="cursor-pointer hover:opacity-90 nav-link">
+              Login
+            </button>
             <div
-              class="bg-[#2bb1b2] py-2 rounded-3xl w-full hover:opacity-90 cursor-pointer"
+              class="bg-[#2bb1b2] py-2 rounded-3xl w-full hover:opacity-90 cursor-pointer nav-link"
             >
               <button>Sign Up</button>
             </div>
@@ -47,6 +50,50 @@
         </div>
       </div>
     </nav>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav"></nav>
+
+    <!-- Hero section -->
+    <div class="flex flex-col gap-4 mb-6">
+      <div class="px-4">
+        <img
+          src="./assets/images/illustration-working.svg"
+          alt=""
+          class="w-full mx-auto"
+        />
+      </div>
+      <div class="text-center flex flex-col gap-4 items-center">
+        <p class="text-4xl text-[#3f2a4d] font-extrabold">
+          More than just shorter links
+        </p>
+        <p class="text-[#a47c91] px-4 text-lg">
+          Build your brand's recoginition and get detailed insights on how your
+          links are performing.
+        </p>
+        <button
+          class="bg-[#2bb1b2] py-4 rounded-3xl hover:opacity-90 cursor-pointer text-white font-bold px-10"
+        >
+          Get Started
+        </button>
+      </div>
+    </div>
+
+    <!-- Shorten Link Section -->
+    <div class="px-8 py-10 w-full">
+      <div
+        class="shorten-link rounded-lg flex flex-col gap-6 items-center justify-center p-6 bg-[#4b2c4d]"
+      >
+        <input
+          type="text"
+          placeholder="Shorten a link here..."
+          class="p-3 rounded-md w-full border-none outline-none"
+        />
+        <button class="p-3 rounded-md bg-[#2bb1b2] text-white font-bold w-full">
+          Shorten it!
+        </button>
+      </div>
+    </div>
   </body>
   <script src="./assets/script.js"></script>
 </html>
