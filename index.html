@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/output.css" />
     <title>URL Shortener</title>
   </head>
-  <body>
+  <body class="w-full h-full">
     <!-- Mobile Navigation -->
     <nav class="flex justify-between items-center py-8 px-4 w-full mobile-nav">
       <img src="./assets/images/logo.svg" alt="" />
@@ -52,22 +52,59 @@
     </nav>
 
     <!-- Desktop Navigation -->
-    <nav class="desktop-nav"></nav>
+    <nav
+      class="desktop-nav flex justify-between items-center w-full p-6 max-w-[1440px] mx-auto"
+    >
+      <div class="flex gap-5 items-center">
+        <img src="./assets/images/logo.svg" alt="" />
+        <a
+          href="#"
+          class="font-bold text-[#b3b3b3] hover:text-black cursor-pointer"
+          >Features</a
+        >
+        <a
+          href="#"
+          class="font-bold text-[#b3b3b3] hover:text-black cursor-pointer"
+          >Pricing</a
+        >
+        <a
+          href="#"
+          class="font-bold text-[#b3b3b3] hover:text-black cursor-pointer"
+          >Resources</a
+        >
+      </div>
+      <div class="flex gap-4">
+        <button
+          class="font-bold text-[#b3b3b3] hover:text-black cursor-pointer"
+        >
+          Login
+        </button>
+        <button
+          class="rounded-3xl py-2 px-5 bg-[#2bb1b2] font-bold text-white cursor-pointer"
+        >
+          Sign Up
+        </button>
+      </div>
+    </nav>
 
     <!-- Hero section -->
-    <div class="flex flex-col gap-4 mb-[8rem]">
-      <div class="px-4">
+    <div
+      class="flex flex-col gap-4 mb-[8rem] w-full max-w-[1440px] mx-auto md:flex-row-reverse md:mt-20 md:items-center"
+    >
+      <div class="px-4 flex-1 md:p-0">
         <img
           src="./assets/images/illustration-working.svg"
           alt=""
-          class="w-full mx-auto"
+          class="w-full mx-auto md:w-10rem"
         />
       </div>
-      <div class="text-center flex flex-col gap-4 items-center">
+      <div
+        class="text-center flex flex-col gap-4 items-center md:text-left md:p-6 md:items-start flex-1"
+      >
         <p class="text-4xl text-[#3f2a4d] font-extrabold">
           More than just shorter links
         </p>
-        <p class="text-[#a47c91] px-4 text-lg">
+        <p class="text-[#a47c91] px-4 text-lg md:p-0">
           Build your brand's recoginition and get detailed insights on how your
           links are performing.
         </p>
@@ -80,12 +117,14 @@
     </div>
 
     <div
-      class="w-full h-full bg-[#e2e2e2ad] flex flex-col gap-3 relative pb-[5rem]"
+      class="w-full h-full bg-[#e2e2e2ad] flex flex-col gap-3 pb-[5rem] mt-[6rem]"
     >
       <!-- Shorten Link Section -->
-      <div class="px-8 py-10 w-full absolute top-[-7rem] left-0 z-10">
+      <div
+        class="px-8 py-10 w-full relative top-[-7rem] left-0 z-10 max-w-[1440px] mx-auto"
+      >
         <div
-          class="shorten-link rounded-lg flex flex-col gap-6 items-center justify-center p-6 bg-[#4b2c4d] w-full"
+          class="shorten-link rounded-lg flex flex-col gap-6 items-center justify-center p-6 bg-[#4b2c4d] w-full max-w-[1440px] mx-auto"
         >
           <div class="flex flex-col gap-1 w-full">
             <input
@@ -108,7 +147,9 @@
       </div>
 
       <!-- Shortened links are kept here -->
-      <div class="flex flex-col mt-[10rem] gap-[4rem] px-8 link-list"></div>
+      <div
+        class="flex flex-col mt-[10rem] gap-[4rem] px-8 link-list w-full max-w-[1440px] mx-auto"
+      ></div>
 
       <div class="w-full px-8 flex flex-col items-center justify-center">
         <div class="mb-16 text-center flex flex-col gap-4">
@@ -122,7 +163,7 @@
         </div>
 
         <div
-          class="w-full bg-white rounded-lg flex flex-col items-center justify-center p-4"
+          class="w-full bg-white rounded-lg flex flex-col items-center justify-center p-4 max-w-[1440px] mx-auto"
         >
           <div
             class="w-16 h-16 rounded-[50%] bg-[#3f2a4d] flex items-center justify-center relative top-[-2rem]"
@@ -146,7 +187,7 @@
         <div class="w-[0.7rem] h-[6rem] bg-[#2bb1b2]"></div>
 
         <div
-          class="w-full bg-white rounded-lg flex flex-col items-center justify-center p-4"
+          class="w-full bg-white rounded-lg flex flex-col items-center justify-center p-4 max-w-[1440px] mx-auto"
         >
           <div
             class="w-16 h-16 rounded-[50%] bg-[#3f2a4d] flex items-center justify-center relative top-[-2rem]"
@@ -170,7 +211,7 @@
         <div class="w-[0.7rem] h-[6rem] bg-[#2bb1b2]"></div>
 
         <div
-          class="w-full bg-white rounded-lg flex flex-col items-center justify-center p-4"
+          class="w-full bg-white rounded-lg flex flex-col items-center justify-center p-4 max-w-[1440px] mx-auto"
         >
           <div
             class="w-16 h-16 rounded-[50%] bg-[#3f2a4d] flex items-center justify-center relative top-[-2rem]"
