@@ -53,6 +53,18 @@
   background-size: cover;
 } */
 
+.error-msg {
+  display: none;
+}
+
+.show-msg {
+  display: block;
+}
+
 .display {
   top: 4rem;
+}
+
+.copied-btn {
+  display: none;
 }
