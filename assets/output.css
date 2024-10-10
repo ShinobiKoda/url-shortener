@@ -627,6 +627,22 @@ video {
   margin-top: 2rem;
 }
 
+.mt-\[-3rem\] {
+  margin-top: -3rem;
+}
+
+.mt-\[1rem\] {
+  margin-top: 1rem;
+}
+
+.mt-\[-4rem\] {
+  margin-top: -4rem;
+}
+
+.mt-\[-7rem\] {
+  margin-top: -7rem;
+}
+
 .block {
   display: block;
 }
@@ -757,6 +773,10 @@ video {
 
 .gap-\[4rem\] {
   gap: 4rem;
+}
+
+.gap-\[1rem\] {
+  gap: 1rem;
 }
 
 .overflow-hidden {
