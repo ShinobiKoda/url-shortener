@@ -151,7 +151,9 @@
         class="flex flex-col mt-[10rem] gap-[4rem] px-8 link-list w-full max-w-[1440px] mx-auto"
       ></div>
 
-      <div class="w-full px-8 flex flex-col items-center justify-center">
+      <div
+        class="w-full px-8 flex flex-col items-center justify-center mobile-statistics-section"
+      >
         <div class="mb-16 text-center flex flex-col gap-4">
           <p class="text-[#3f2a4d] font-extrabold text-2xl">
             Advanced Statistics
@@ -161,7 +163,6 @@
             advanced statistics board.
           </p>
         </div>
-
         <div
           class="w-full bg-white rounded-lg flex flex-col items-center justify-center p-4 max-w-[1440px] mx-auto"
         >
@@ -232,8 +233,73 @@
         </div>
       </div>
 
+      <div
+        class="desktop-statistics-section w-full flex flex-col max-w-[1440px] mx-auto md:mt-[-15rem] p-6"
+      >
+        <div class="mb-16 flex flex-col gap-4 items-center justify-center">
+          <p class="text-[#3f2a4d] font-extrabold text-2xl">
+            Advanced Statistics
+          </p>
+          <p class="text-[#a47c91]">
+            Track how your links are performing accross the web with our
+            advanced statistics board.
+          </p>
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="rounded-lg shadow-lg flex flex-col p-6">
+            <div
+              class="w-16 h-16 bg-[#3f2a4d] rounded-[50%] flex items-center justify-center relative top-[-2rem] left-[1rem]"
+            >
+              <img src="./assets/images/icon-brand-recognition.svg" alt="" />
+            </div>
+            <div>
+              <h4 class="text-[#3f2a4d] font-bold text-xl">
+                Brand Recognition
+              </h4>
+              <p class="text-[#a47c91]">
+                Boost your brand recognition with each click. Generic links
+                don't mean a thing. Branded links help instill confidence in
+                your content.
+              </p>
+            </div>
+          </div>
+          <div class="w-[14rem] h-2 bg-[#2bb1b2]"></div>
+          <div class="rounded-lg shadow-lg p-6 mt-[4rem]">
+            <div
+              class="w-16 h-16 bg-[#3f2a4d] rounded-[50%] flex items-center justify-center relative top-[-2rem] left-[1rem]"
+            >
+              <img src="./assets/images/icon-detailed-records.svg" alt="" />
+            </div>
+            <div>
+              <h4 class="text-[#3f2a4d] font-bold text-xl">Detailed Records</h4>
+              <p class="text-[#a47c91]">
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+          </div>
+          <div class="w-[14rem] h-2 bg-[#2bb1b2]"></div>
+          <div class="rounded-lg shadow-lg p-6 mt-[10rem]">
+            <div
+              class="w-16 h-16 bg-[#3f2a4d] rounded-[50%] flex items-center justify-center relative top-[-2rem] left-[1rem]"
+            >
+              <img src="./assets/images/icon-fully-customizable.svg" alt="" />
+            </div>
+            <div>
+              <h4 class="text-[#3f2a4d] font-bold text-xl">
+                Fully Customizable
+              </h4>
+              <p class="text-[#a47c91]">
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Other sections -->
-      <div></div>
     </div>
 
     <footer>
@@ -247,56 +313,58 @@
           Get Started
         </button>
       </div>
-      <div
-        class="bg-black text-white flex flex-col gap-6 items-center justify-center py-8"
-      >
-        <h2 class="font-bold text-3xl mb-8">Shortly</h2>
-        <div class="flex flex-col gap-4 text-center">
-          <h4 class="text-xl font-semibold">Features</h4>
-          <ul class="flex flex-col gap-2 text-[#b3b3b3]">
-            <li>Link shortening</li>
-            <li>Branded Links</li>
-            <li>Analytics</li>
-          </ul>
-        </div>
-        <div class="flex flex-col gap-4 text-center">
-          <h4 class="text-xl font-semibold">Resources</h4>
-          <ul class="flex flex-col gap-2 text-[#b3b3b3]">
-            <li>Blog</li>
-            <li>Developers</li>
-            <li>Support</li>
-          </ul>
-        </div>
-        <div class="flex flex-col gap-4 text-center">
-          <h4 class="text-xl font-semibold">Company</h4>
-          <ul class="flex flex-col gap-2 text-[#b3b3b3]">
-            <li>About</li>
-            <li>Our Team</li>
-            <li>Careers</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-        <div class="flex gap-4">
-          <img
-            src="./assets/images/icon-facebook.svg"
-            alt=""
-            class="hover:opacity-90 cursor-pointer"
-          />
-          <img
-            src="./assets/images/icon-twitter.svg"
-            alt=""
-            class="hover:opacity-90 cursor-pointer"
-          />
-          <img
-            src="./assets/images/icon-pinterest.svg"
-            alt=""
-            class="hover:opacity-90 cursor-pointer"
-          />
-          <img
-            src="./assets/images/icon-instagram.svg"
-            alt=""
-            class="hover:opacity-90 cursor-pointer"
-          />
+      <div class="bg-black text-white">
+        <div
+          class="w-full mx-auto max-w-[1440px] flex flex-col gap-6 items-center justify-center py-8 md:flex md:flex-row md:items-start md:justify-between"
+        >
+          <h2 class="font-bold text-3xl mb-8">Shortly</h2>
+          <div class="flex flex-col gap-4 text-center md:text-left">
+            <h4 class="text-xl font-semibold">Features</h4>
+            <ul class="flex flex-col gap-2 text-[#b3b3b3]">
+              <li>Link shortening</li>
+              <li>Branded Links</li>
+              <li>Analytics</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 text-center md:text-left">
+            <h4 class="text-xl font-semibold">Resources</h4>
+            <ul class="flex flex-col gap-2 text-[#b3b3b3]">
+              <li>Blog</li>
+              <li>Developers</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 text-center md:text-left">
+            <h4 class="text-xl font-semibold">Company</h4>
+            <ul class="flex flex-col gap-2 text-[#b3b3b3]">
+              <li>About</li>
+              <li>Our Team</li>
+              <li>Careers</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="flex gap-4">
+            <img
+              src="./assets/images/icon-facebook.svg"
+              alt=""
+              class="hover:opacity-90 cursor-pointer"
+            />
+            <img
+              src="./assets/images/icon-twitter.svg"
+              alt=""
+              class="hover:opacity-90 cursor-pointer"
+            />
+            <img
+              src="./assets/images/icon-pinterest.svg"
+              alt=""
+              class="hover:opacity-90 cursor-pointer"
+            />
+            <img
+              src="./assets/images/icon-instagram.svg"
+              alt=""
+              class="hover:opacity-90 cursor-pointer"
+            />
+          </div>
         </div>
       </div>
     </footer>

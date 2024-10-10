@@ -73,12 +73,24 @@
   display: none;
 }
 
+.desktop-statistics-section {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-nav {
     display: none;
   }
 
   .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-statistics-section {
+    display: none;
+  }
+
+  .desktop-statistics-section {
     display: flex;
   }
 }
